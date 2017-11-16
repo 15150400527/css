@@ -87,7 +87,6 @@
 	padding-left: 10%;
 	margin: 0 auto;
 	overflow: hidden;
-	background-color: black;
     }
     .contant a{
 	border-radius: 5px;
@@ -114,48 +113,51 @@
     }
         
     .footer{
-	background: black;
+	background: #565555;
     position: relative;
     width: 100%;
     height: 200px;
     margin-top: 30px;
     padding-bottom: 10px;
     text-shadow: 1px 1px 1px white;
-    color: #666666;
+    color: whitesmoke;
     overflow: hidden;
-}
+    }
     .footer_left{
 	width: 45%;
 	height: 100%;
 	border-right: 1px solid darkgray;
 	position: relative;
-}
+    }
     .footer_right{
 	width: 45%;
 	height: 100%;
 	position: absolute;
 	left: 50%;
 	top: 10px;
-}
-    .footer_right img{
-	width: 50%;
-}
+    }
     .footer_right p{
-	line-height: 20px;
-}
+	line-height: 10px;
+    }
+        .footer_right span{
+            color: red;
+        } 
+        .title{
+            
+        }
     .link{
 	position: absolute;
 	top: 10px;
 	right: 5px;
-}
+    }
     .link a{
 	width: 30px;
 	float: left;
 	margin-left: 6px;
-}
+    }
     .link a img{
 	width: 100%;
-}
+    }
 
         @media only screen and (min-width:700px){
             .contant a{
@@ -175,15 +177,25 @@
     </style>
 </head>
 <body>
-    
+    <a name="dh"></a>
     <div>
        <div class="title">
        <nav>
         <img src="./image/bt.png">
          <div class="list">
-					<a href="">首页</a>
-					<a href="">新闻</a>
+            <a href="">首页</a>
+					<a href="" class="dropdown-toggle" data-toggle="dropdown">新闻<span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+                         <li><a href="#feature-tab" data-tab="tab-chrome">Chrom</a></li>
+                         <li><a href="#feature-tab" data-tab="tab-firefox">Firefox</a></li>
+                         <li><a href="#feature-tab" data-tab="tab-safari">Safari</a></li>
+                         <li><a href="#feature-tab" data-tab="tab-opera">Opera</a></li>
+                         <li><a href="#feature-tab" data-tab="tab-ie">IE</a></li>
+                         </ul>
 					<a href="">关于</a>
+					<a href="">设置</a>
+					<a href="">登陆/注册</a>
+                     
 				</div>
     </nav>
    </div>
@@ -244,50 +256,65 @@
     
             <div class="contant">
 					<a href="#">
-						<img src="./image/lb3.jpg"/>
-						<p>链家大数据</p>
+						<img src="./image/rd1.jpg"/>
+						<p>江歌案件带给了我们什么？</p>
 					</a>
 					<a href="#">
-						<img src="./image/lb2.jpg"/>
-						<p>链家大数据</p>
+						<img src="./image/rd2.jpg"/>
+						<p>扬州劝烟者被告法庭</p>
 					</a>
 					<a href="#">
-						<img src="./image/lb4.jpg"/>
-						<p>链家大数据</p>
+						<img src="./image/rd3.jpg"/>
+						<p>沅江刺死班主任高三学生涉故意杀人罪被刑拘</p>
 					</a>
-                   
+                    </div>
+                    
+    <div class="rd">
+        <div class="row">
+              <div class="col-md-4"></div>
+              <div class="col-md-4">
+                  <hr style="height:3px;border:none;border-top:3px double  #f04155;" />
+                  <h2>新闻前沿</h2>
+                  <hr style="height:3px;border:none;border-top:3px double  #f04155;" /></div>
+              <div class="col-md-4"></div>
+        </div>
+    </div>
+    
+            <div class="contant">
 					<a href="#">
-						<img src="./image/lb2.jpg"/>
-						<p>链家大数据</p>
+						<img src="./image/qy1.jpg"/>
+						<p>“百花杯”金奖——千孔镂空梅瓶</p>
 					</a>
 					<a href="#">
-						<img src="./image/lb4.jpg"/>
-						<p>链家大数据</p>
+						<img src="./image/qy2.jpg"/>
+						<p>警方归还“10·18”系列盗销电动车</p>
 					</a>
-                   <a href="#">
-						<img src="./image/lb4.jpg"/>
-						<p>链家大数据</p>
+					<a href="#">
+						<img src="./image/qy3.jpg"/>
+						<p>盘点从传统经典到“杀马特”的纪念品</p>
 					</a>
                     </div>
     
     <div class="footer">
 				<div class="footer_left">
 					<div class="link">
-						<a href="#"><img src="./image/contact1.jpg"/></a>
-						<a href="#"><img src="./image/contact2.jpg"/></a>
-						<a href="#"><img src="./image/contact3.jpg"/></a>
+						<a href="#"><img src="./image/contact3.png"/></a>
+						<a href="#"><img src="./image/contact2.png"/></a>
+						<a href="#"><img src="./image/contact1.png"/></a>
 					</div>
 				</div>
 				<div class="footer_right">
 					<img src="image/footer_logo.jpg"/>
-					<p>Infini Studio | 映纷创意</p>
-					<p>北京市朝阳区常营未来时大厦706</p>
-					<p>TEL : 010-85394331</p>
-					<p>QQ : 7585917</p>
-					<p>Email : infinistudio@foxmail.com</p>
-					<p>weibo : @InfiniStudio</p>
+					<p id="title">遇言<span>|新闻</span></p>
+					<p>版权所有 遇言新闻网</p>
+					<p>QQ : 765453430</p>
+					<p>Email : yuyan@163.com</p>
+					<p>weibo : @遇言|新闻</p>
+					<p>Copyright&copy; yujian.com All Rights Reserved</p>
 				</div>
-				
+				<div class="fhdb">
+				    <a href="#dh">返回顶部</a>
+				</div>
 				</div>
     <script src="js/jquery-1.11.1.js"></script>
     <script src="js/bootstrap.js"></script>
