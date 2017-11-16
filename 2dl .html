@@ -42,6 +42,10 @@
 	        text-align: center;
 	        margin:0 auto;
         }
+        .list img{
+            width: 20px;
+            height: 20px;
+        }
         nav a{
 	        text-align: right;
 	        margin-right:10% ;
@@ -50,23 +54,102 @@
             font-family:KaiTi;
         }
         nav a:hover{
-	        color: black;
+	        color:  #f04155;
             text-decoration: none;
         }
+        .y{
+            width: 12%;
+            height: 40px;
+            text-align: center;
+            float: right;
+            background-color:  #f04155;
+            margin-top: -70px;
+        }
+        .y img{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+        .y a{
+            display: inline-block;
+        }
         
-        
+        .footer{
+	background: #565555;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 1px white;
+    color: whitesmoke;
+    overflow: hidden;
+    }
+    .footer_left{
+	width: 45%;
+	height: 100%;
+	border-right: 1px solid darkgray;
+	position: relative;
+    }
+    .footer_right{
+	width: 45%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 10px;
+    }
+    .footer_right p{
+	line-height: 10px;
+    }
+        .footer_right span{
+            color: red;
+        } 
+    .link{
+	position: absolute;
+	top: 10px;
+	right: 5px;
+    }
+    .link a{
+	width: 30px;
+	float: left;
+	margin-left: 6px;
+    }
+    .link a img{
+	width: 100%;
+    }
+
+        @media only screen and (min-width:600px){
+            .contant a{
+                width: 28%;
+            }
+        @media only screen and (max-width:600px) and (min-width:300px){
+            .contant a{
+                width: 37%;
+            }
+}
+        @media only screen and (max-width:300px ){
+            .contant a{
+                width: 90%;
+            }
+
+}
     </style>
 </head>
 <body>
     
-    <div>
+     <div>
        <div class="title">
        <nav>
         <img src="./image/bt.png">
+        <div class="y">
+            <a href=""><img src="./image/set.png" alt=""></a>
+            <a href="">登录/注册</a>
+        </div>
          <div class="list">
-					<a href="">首页</a>
-					<a href="">新闻</a>
-					<a href="">关于</a>
+                    <a href="">首页</a>
+					<a href="" >新闻</a>
+					<a href="">搜索</a> 
+					<a href="">关于</a>            
 				</div>
     </nav>
    </div>
@@ -74,15 +157,34 @@
     
    
     <div class="dl">
-        <input type="text" placeholder="请输入账号">
-        <input type="text" placeholder="请输入密码">
+        <input type="text" placeholder="请输入账号"><br>
+        <input type="text" placeholder="请输入密码"><br>
         
         <a href="3zc.html">123</a>
     </div>              
     
     
     
-    
+    <div class="footer">
+				<div class="footer_left">
+					<div class="link">
+						<a href="#"><img src="./image/contact3.png"/></a>
+						<a href="#"><img src="./image/contact2.png"/></a>
+						<a href="#"><img src="./image/contact1.png"/></a>
+					</div>
+				</div>
+				<div class="footer_right">
+					<a href="#dh">返回顶部</a>
+					<p></p>
+					<p></p>
+					<p id="title">遇言<span>|新闻</span></p>
+					<p>版权所有 遇言新闻网</p>
+					<p>QQ : 765453430</p>
+					<p>Email : yuyan@163.com</p>
+					<p>weibo : @遇言|新闻</p>
+					<p>Copyright&copy; yujian.com All Rights Reserved</p>
+				</div>
+				</div>
     <script src="js/jquery-1.11.1.js"></script>
     <script src="js/bootstrap.js"></script>
     <script>
