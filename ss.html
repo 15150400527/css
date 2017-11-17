@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>遇言|新闻    首页</title>
+    <title>遇言|新闻    搜索</title>
      <link rel="stylesheet" href="css/bootstrap.css">
     <link href="video-js/video-js.css" rel="stylesheet" type="text/css">
     <script src="video-js/video.js"></script>
@@ -79,7 +79,7 @@
     position: relative;
     width: 100%;
     height: 200px;
-    margin-top: 30px;
+    margin-top: 50px;
     padding-bottom: 10px;
     text-shadow: 1px 1px 1px white;
     color: whitesmoke;
@@ -117,35 +117,50 @@
     .link a img{
 	width: 100%;
     }
-
-        @media only screen and (min-width:600px){
-            .contant a{
-                width: 28%;
-            }
-        @media only screen and (max-width:600px) and (min-width:300px){
-            .contant a{
-                width: 37%;
-            }
-}
-        @media only screen and (max-width:300px ){
-            .contant a{
-                width: 90%;
-            }
-
-}
-            .row{
-                 background-color: beige;
-            }
             .ss{
-                width: 50%;
-                height:300px;
-                margin-top: 100px;
-               
+                width: 100%;
+                height: 300px;
+                margin-top: 20px;
+                text-align: center;
             }
             .ss img{
-                width: 10px;
-                height: 10px;
+                width: 30px;
+                height: 30px;
             }
+        .sea{
+            padding-top: 50px;
+        }
+        .sea a{
+            margin-left: 10px;
+        }
+        .rs{
+            padding-top: 20px;
+            text-align: center;
+        }
+        .rs h2{
+            color: darkgray;
+        }
+        .rsc{
+            width:150px;
+            height:35px;
+            border: 2px solid darkgray;
+            text-align: center;
+            vertical-align: middle;
+             margin-bottom: 10px;
+        }
+        .rsc a{
+            color: skyblue;
+            text-align: center;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: YouYuan;
+        }
+        .rsc a:hover{
+            color: darkgray;
+        }
+        .r{
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
@@ -155,30 +170,102 @@
        <nav>
         <img src="./image/bt.png">
         <div class="y">
-            <a href=""><img src="./image/set.png" alt=""></a>
-            <a href="">登录/注册</a>
+            <a href="set.html"><img src="./image/set.png" alt=""></a>
+            <a href="dl.html">登录/注册</a>
         </div>
          <div class="list">
-                    <a href="">首页</a>
-					<a href="" >新闻</a>
-					<a href="">搜索</a> 
-					<a href="">关于</a>            
+                    <a href="sy.html">首页</a>
+					<a href="xw.html" >新闻</a>
+					<a href="ss.html">搜索</a> 
+					<a href="gy.html">关于</a>            
 				</div>
     </nav>
    </div>
    </div>
-    
-   <div class="row">
-       <div class="col-md-4"></div>
-       <div class="col-md-4">
-           <div class="ss">
-        <img src="./image/bt.png" alt="">
-        <input type="text" placeholder="请输入关键字"> 
-        <button id="dlb"><img src="./image/search.png" alt=""></button>
-    </div>              
+          <div class="row">
+           <div class="col-md-2"></div>
+           <div class="col-md-8">
+               <div class="ss">  
+               <div class="sea">
+                   <div class="row">
+                <input type="text" placeholder="请输入关键字" style="width:400px; height:35px;" > 
+                <a href=""><img src="./image/search.png" alt=""></a>
+            </div>
+               </div> 
+        <div class="rs">
+            <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <h2>热搜词</h2>
+            </div>
+            <div class="col-md-9"></div>
+        </div>
+        </div>       
+        <div class="r">
+            <div class="row">
+           <div class="col-md-1"></div>
+           <div class="col-md-3">
+               <div class="rsc">
+                   <a href="">特斯拉</a>
+               </div>
+           </div>
+           <div class="col-md-3">
+               <div class="rsc">
+                   <a href="">VR体验店</a>
+               </div>
+           </div>
+           <div class="col-md-3">
+               <div class="rsc">
+                   <a href="">暴雪</a>
+               </div>
+           </div>
+           <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+           <div class="col-md-1"></div>
+           <div class="col-md-3">
+               <div class="rsc">
+                   <a href="">电商</a>
+               </div>
+           </div>
+           <div class="col-md-3">
+               <div class="rsc">
+                   <a href="">携程</a>
+               </div>
+           </div>
+           <div class="col-md-3">
+               <div class="rsc">
+                   <a href="">ARCore</a>
+               </div>
+           </div>
+           <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+           <div class="col-md-1"></div>
+           <div class="col-md-3">
+               <div class="rsc">
+                   <a href="">双十一</a>
+               </div>
+           </div>
+           <div class="col-md-3">
+               <div class="rsc">
+                   <a href="">创业</a>
+               </div>
+           </div>
+           <div class="col-md-3">
+               <div class="rsc">
+                   <a href="">贾跃亭</a>
+               </div>
+           </div>
+           <div class="col-md-2"></div>
+        </div>
+        </div>
+               </div>   </div>         
+           <div class="col-md-2"></div>
        </div>
-       <div class="col-md-4"></div>
-   </div>
+       
+             
+      
     
     
     

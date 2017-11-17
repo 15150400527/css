@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>遇言|新闻    首页</title>
+    <title>遇言|新闻    注册</title>
      <link rel="stylesheet" href="css/bootstrap.css">
     <link href="video-js/video-js.css" rel="stylesheet" type="text/css">
     <script src="video-js/video.js"></script>
@@ -118,33 +118,31 @@
 	width: 100%;
     }
 
-        @media only screen and (min-width:600px){
-            .contant a{
-                width: 28%;
-            }
-        @media only screen and (max-width:600px) and (min-width:300px){
-            .contant a{
-                width: 37%;
-            }
-}
-        @media only screen and (max-width:300px ){
-            .contant a{
-                width: 90%;
-            }
-
 }
             .row{
                  background-color: beige;
             }
-            .dl{
+            .zc{
                 width: 50%;
                 height:300px;
                 margin-top: 100px;
+                text-align: center;
                
             }
-            .dl h1{
-                
+            .zc h1{
+                font-family: YouYuan;
             }
+            .zc button{
+            width: 100px;
+        }
+            .zc a{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+            }
+        .zc a:hover{
+             color: #f04155;
+        }
     </style>
 </head>
 <body>
@@ -154,35 +152,39 @@
        <nav>
         <img src="./image/bt.png">
         <div class="y">
-            <a href=""><img src="./image/set.png" alt=""></a>
-            <a href="">登录/注册</a>
+            <a href="set.html"><img src="./image/set.png" alt=""></a>
+            <a href="dl.html">登录/注册</a>
         </div>
          <div class="list">
-                    <a href="">首页</a>
-					<a href="" >新闻</a>
-					<a href="">搜索</a> 
-					<a href="">关于</a>            
+                    <a href="sy.html">首页</a>
+					<a href="xw.html" >新闻</a>
+					<a href="ss.html">搜索</a> 
+					<a href="gy.html">关于</a>            
 				</div>
     </nav>
    </div>
    </div>
-    
-   <div class="row">
+
+        <div class="row">
        <div class="col-md-4"></div>
        <div class="col-md-4">
-           <div class="dl">
-       <h1>登录</h1>
-        <input type="text" placeholder="请输入账号"><br>
+           <div class="zc">
+       <h1>注册</h1>
+        <input type="text" placeholder="请输入邮箱" style="width: 400px;"><br>
         <p></p>
-        <input type="text" placeholder="请输入密码"><br> 
+        <input type="text" placeholder="请输入密码" style="width: 400px;"><br> 
+        <p></p>  
+        <input type="text" placeholder="请再次输入密码" style="width: 400px;"><br> 
         <p></p>     
-        <button id="dlb">登录</button>
-        <a href="" id="forget">忘记密码了</a>
+        <button>注册</button><br>
+        <p></p>
         <a href="dl.html">&lt;已有账号</a>
     </div>              
        </div>
        <div class="col-md-4"></div>
    </div>
+
+   
     
     
     
