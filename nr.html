@@ -128,7 +128,7 @@
         .w{
             display:inline-block;
             width:60%;
-            height:5000px;
+            height:7000px;
             font-family:YouYuan;
         }
         .w h3{
@@ -180,14 +180,125 @@
             font-size:20px;
         }
         
-        .bl{
+        
+        
+        .contant{
+	width: 100%;
+	padding-left: 10%;
+	margin: 0 auto;
+	overflow: hidden;
+    }
+    .contant a{
+	border-radius: 5px;
+	background: gainsboro;
+	float: left;
+	margin: 2% 1%;
+	overflow: hidden;
+	color: #959595;
+	box-shadow: 2px 2px 2px #E3E3E3;
+	position: relative;
+    text-decoration: none;
+    }
+    .contant a img{
+	width: 100%;
+	float: left;
+    }
+    .contant a p{
+	clear: both;
+    text-align: center;
+    line-height: 35px;
+    font-family: HUM521L;
+    font-size: 0.98em;
+    color: #666666;
+    white-space: nowrap;
+    }
+        @media only screen and (min-width:600px){
+            .contant a{
+                width: 28%;
+            }
+        @media only screen and (max-width:600px) and (min-width:300px){
+            .contant a{
+                width: 37%;
+            }
+}
+        @media only screen and (max-width:300px ){
+            .contant a{
+                width: 90%;
+            }
+
+}
+           .bl{
             display:inline-block;
             width:30%;
-            height:200px;
+            height:1000px;
             background-color:gainsboro;
             vertical-align:top;
             margin-left:5%;
+            font-family: YouYuan;
+            margin-top: 100px;
         }
+            .sm{
+                height: 270px;
+            }
+            .sm img{
+                margin-top: 20px;
+                width: 100px;
+                height: 100px;
+                border-radius:100px;
+            }
+            .sm h2{
+                font-size: 20px;
+            }
+            .sm p{
+                float: left;
+                margin-left: 10%;
+            }
+            .sm a{
+                color: black;
+                text-decoration: none;
+                 margin-left: 10%;
+                float: left;
+            }
+            .sm a:hover{
+                color:  #f04155;
+            }
+            .pl{
+                margin-top: 20px;
+                text-align: left;
+                height: 300px;
+            }
+            .pl p{
+                font-size: 30px;
+                float: left;
+                margin-left: 10%
+            }
+            .plk{
+                width: 300px;
+                height: 100px;
+                border: 1px solid black;
+                margin-left: 10%;
+                margin-top: 15%;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .plk a{
+                font-size: 20px;
+                color: black;
+                text-decoration: none;
+            }
+            .plk span:hover{
+                color:  #f04155;
+            }
+            .plk span{
+                color: skyblue;
+            }
+            .pl a{
+                float: left;
+                margin-left: 10%;
+            }
+            button:hover{
+                opacity: 0.5;
+            }
     </style>
 </head>
 <body>
@@ -248,7 +359,7 @@
             <p></p>
             <p>至少从目前的情况来看，AI想要在《星际争霸》这个项目上战胜人类，还有很长的路要走。</p>
             <p></p>
-            <span>层层选拔的机器人“对手”</span>
+            <span>层层选拔的机器人“对手”</span><br>
             <p>在过去的几年之间，以《星际争霸》为基础展开的人工智能研究一直在上演，其历史甚至比围棋上的较量还要早。最著名而且历史最悠久的，肯定要数美国加州大学圣克鲁兹分校举办的AIIDE了。</p>
             <p></p>
             <p>这场名为AIIDE的比赛，其实本质上是一场人工智能之间的比赛，说白了就是“电脑打电脑”，从2010年开始，每年一届，到今年已是第8年。</p>
@@ -264,15 +375,122 @@
             <p></p>
             <p>AIIDE的组织者Dave Churchill曾就此表示：“即使最顶尖的电脑AI，目前也只达到了低级业余的水平（在星际争霸项目中），在人类选手面前就像过家家一样，想要达到AlphaGo在围棋方面的垄断优势，至少还有5-10年的路要走……但是谁也说不好明天会发生什么。” </p>
             <p></p>
+            <span>《星际争霸》究竟比围棋难在哪儿？</span><br>
+            <p></p>
+            <p>说AIIDE里的人机对抗还是一场不成熟、不正式的助兴节目，这次韩国举办的比赛应该会让这个论断更有说服力。随着时间的进步，电脑硬件和智能算法的进步要远快于人脑。所以至少到比赛开始之前，无论是星际职业选手，观众还是科研人员，对于结果的预测都很难达成共识。</p>
+            <p></p>
+            <p>《麻省理工科技评论》杂志在赛前曾采访过两位顶尖职业选手：2016年《星际争霸2》WCS世界锦标赛的冠军ByuN，以及曾经世界最强的虫族选手之一，现已退役的“暴君”Jaedong。</p>
+            <p></p>
+            <p>二人均在采访中表示，愿意代表人类与星际AI来一场公开的较量，但是他们对于谁胜谁负的看法却截然相反，恰好可以代表大部分人对于这场比赛的两种态度。</p>
+            <p></p>
+            <p>24岁的ByuN很有信心战胜人工智能。“在有生之年，人工智能绝不是我的对手。” 他说，“在玩《星际争霸》时，你需要对许多未知和变数作出迅速的反应，但是我发现AlphaGo并不擅长处理突发事件……想要设计一个同时可以应对突发情况，又要对比赛的长期发展做出预测的AI是很难的。”</p>
+            <p></p>
+            <p><img src="./image/nr5.gif" alt=""></p>
+                <p>像这样精彩的极限操作，没有任何一个人类选手可以保证在比赛中万无一失</p>
+            <p></p>
+            <p>而Jaedong则持相反的观点，他认为人工智能可以轻松战胜人类选手。他说：“AI不知疲倦，而且在重压之下也不会犯错，并且拥有人类生理无法实现的手速（APM）, 如果人工智能技术达到了一个人类无法跟上的速度，那么它将轻松战胜人类。”</p>
+            <p></p>
+            <p><img src="./image/nr6.gif" alt=""></p>
+            <p>职业星际选手的手速在人工智能面前不值一提</p>
+            <p></p>
+            <p><strong>这两种观点的矛盾之处，恰恰是人们对于“想要赢，什么条件最重要”的讨论。换句话讲，就是在问：AI为什么在《星际争霸》项目上会输呢？或者是问：为什么要选择《星际争霸》这款游戏来作为研究人工智能AI的样本呢？</strong></p>
+            <p></p>
+            <p>相比于之前AlphaGo擅长的“完全信息博弈”的围棋，《星际争霸》显然是一个拥有更多不确定因素的游戏。在围棋对弈时，AI可以看清楚棋盘上的每一个位置，然后依靠自己比人脑强大无数倍的计算能力，衡量每一步落子所带来的收益，然后确定最优的方案。这种能力是人脑再开发到极限也是无法实现的。</p>
+            <p></p>
+            <p>而在游戏中，AI的这种优势其实并无太多用武之地。熟悉RTS（即时战略）游戏的玩家应该都了解“战争迷雾”这种机制。AI并没有“作弊”读取正在进行中的游戏的内存数据的话，它是无法得知玩家现阶段在布置何种战术，因此也就无法提前做出“最优判断”。而这种判断对于RTS的获胜来说才是至关重要的。即使AI洞悉了玩家的战术，他也未必能即时做出改变，甚至有可能被玩家“虚晃一枪”。</p>
+            <p></p>
+            <p>职业选手ByuN就表示他会使用"非常规的策略和战术"来迷惑AI。“我会阻止它开视野，发现我的基地布局和建筑顺序。”ByuN说，"如果我的基地被发现，我会选择停止所有建筑计划。”</p>
+            <p></p>
+            <p><img src="./image/nr7.jpg" alt=""></p>
+            <p></p>
+            <p>AI在信息对等的情况下，临机应变的能力不如人类，星际需要玩家对资源控制，升级先后顺序，不同种族和兵种相互克制等方面有整体的认识。这种互相牵制的效果，即是游戏平衡性的由来。<strong>这方面的整体考虑远比下围棋时只考虑黑子和白子的位置更加复杂。</strong></p>
+            <p></p>
+            <p>考虑到人工智能在APM手速和精确微操方面优势明显，这可能成为另外一个能决定比赛最终结果的重要因素。</p>
+            <p></p>
+            <p>曾经有人设计出一种 “悍马2000（Automation 2000）”的脚本，极限APM达到15000（顶尖职业选手APM大约为200+），实现了一系列诸如“100只狗拆掉20辆坦克”、“机枪兵甩毒爆”、“无双运输机甩牛”等眼花缭乱的壮举。如果在现实比赛中出现，无疑可以给人类玩家造成巨大的心里压力，甚至一举奠定胜利基础。</p>
+            <p></p>
+            <p><img src="./image/nr8.gif" alt=""></p>
+            <p>100只狗 VS 20辆坦克</p>
+            <p></p>
+            <p>虽然顶尖职业选手也曾在比赛中上演过类似的操作，但是毕竟在正式比赛的高压之下，没人敢说一定能成功。在这种前提下，电脑与人脑看起来是在不平衡的前提下进行对决。官方似乎也注意到了这一点，暴雪和DeepMind团队也强调过，<strong>未来的人工智能并不会拥有非人类的逆天操作，他们将会通过限制人工智能的APM来保证它的操作，也会有类似人类的极限和失误。</strong></p>
+            <p></p>
+            <p><img src="./image/nr9.gif" alt=""></p>
+            <p>电脑控制下的机枪兵甩毒爆</p>
+            <p></p>
+            <p>但是艺高人胆大的ByuN再一次站出来反对了，他说：“任何限制人工智能的举动都会令‘人机大战’失去意义。 ”</p>
+            <p></p>
+            <span>启示</span><br>
+            <p></p>
+            <p>目前除了这些老牌的星际AI在不断进化之外，也有更多人工智能科研团队加入进来。其中最有代表性的就是曾主导了AlphaGo开发的DeepMind团队。</p>
+            <p></p>
+            <p>AlphaGo 2.0在版本（即完胜柯洁的版本）时，已经可以通过自我博弈达到学习的目的。如果这种技术应用到游戏中的话，可能会彻底改变目前星际AI打法都是人工设定好的，容易被针对的现状，甚至会诞生出一些新的战术和玩法，以启发职业选手。</p>
+            <p></p>
+            <p><img src="./image/nr10.jpg" alt=""></p>
+            <p>在2016年的暴雪嘉年华开幕式上，谷歌的研究人员就上台宣布了DeepMind目前和暴雪共同开发星际AI的计划和工作进展</p>
+            <p></p>
+            <p>而由Elon Musk赞助的人工智能项目OpenAI，也同样将目标瞄准了《星际争霸》为代表的对抗性游戏。在今年的Dota2 Ti7全球总决赛上，它就以压倒性的优势战胜了代表人类玩家的顶级选手Dendi。虽然二者对决并非建立在完整的游戏规则之上，但是在中路一对一对线的表演中，OpenAI在走位，补兵的操作上没有一丝失误，这也再一次映证了电脑AI在操作方面仍然有着先天性的优势。</p>
+            <p></p>
+            <p>来自中国阿里巴巴人工智能实验室和伦敦大学的研究人员也在以星际为样本，研究人工智能对多种单位协同控制的能力，并且取得了不错的成绩。</p>
+            <p></p>
+            <p><strong>众多科研机构能够如此顺利进行星际AI研究，要多亏了暴雪官方在游戏上对开放性做出的让步。</strong>针对《星际争霸1》，暴雪专门针对母巢之战版本开放了BWAPI编程接口，保证了开发者可以针对游戏操作来不断优化人工智能的算法，同时还保证了“公平性”：<strong>AI基本上只能按照人类的思维方式向游戏下达指令，基本上人类可以做到哪些事情，AI也就只能做到这个地步，从而杜绝了对于电脑会“作弊”的担忧。</strong></p>
+            <p></p>
+            <p>针对《星际争霸2》，暴雪则和DeepMind团队合作推出了SC2LE（StarCraft II Learning Environment）——一个星际争霸2（StarCraft2）的工具包，为研究提供了非常大的帮助。</p>
+            <p></p>
+            <p><img src="./image/nr11.gif" alt=""></p>
+            <p>通过暴雪开放的官方接口，已经可以测试AI在某些特殊任务中的行为</p>
+            <p></p>
+            <p>显然，研究一款游戏AI不是所有研发人员的最终目的。谷歌曾经透露，更多的意义是通过这种研究来帮助人类改善生活。</p>
+            <p></p>
+            <p>如果仅从《星际争霸》这款游戏来看，人工智能在不久的将来，可以成为人类选手训练的最佳伴侣。更进一步讲，当人工智能技术成熟之后，提供给人类的可能更像是星际争霸中副官的形象，协助我们分析局面，提供建议。当然，这样的前提是我们电脑AI能“更像一个真人”或者一个“冷静的旁观者”，这样最终的决定权就仍然掌握在我们自己手中。</p>
+            <p></p>
+            <p>最后提醒一句，那些曾经给柯洁出主意，让他“拔掉AlphaGo插头”的人要注意了，星际AI可不吃这一套。因为《星际争霸2》对战时掉线，是可以重连的。</p>
+            <p></p>
+            <p>*文章为作者独立观点，不代表遇言网立场</p>
+            <p></p>
+            <p>本文由 游戏研究社&nbsp; 授权 <a href="sy.html">遇言网</a> 发表，并经遇言网编辑。转载此文章须经作者同意，并请附上出处(遇言网)及本页链接。原文链接https://www.huxiu.com/article/222110.html</p>
+            <hr>
+            <div class="tj">
+            <h1>推荐阅读</h1>
+            <hr>
+             <div class="contant">
+					<a href="#">
+						<img src="./image/tj1.jpg"/>
+						<p>有一种喜闻乐见的外挂</p>
+					</a>
+					<a href="#">
+						<img src="./image/tj2.jpg"/>
+						<p>机器人时代</p>
+					</a>
+					<a href="#">
+						<img src="./image/tj3.jpg"/>
+						<p>害怕错过风口的年轻人</p>
+					</a>
+                    </div>
         </div>
-        
+        </div>
     </div>
     
     <div class="bl">
+       <div class="sm">
+           <img src="./image/yx.jpg" alt="">
+        <h1>游戏研究社&nbsp;</h1>
+        <span>16篇文章</span><br>
+        <p>最近文章</p><br>
+        <p></p>
+        <a href="">在日本，二次元正在拯救没落的“刀匠”</a><br>
+        <hr>
+       </div>
         
+        <div class="pl">
+           <p>说点什么</p><br>
+            <hr style="margin-top: 30px;">
+            <div class="plk">
+                <a href="dl.html"><span>登录</span>后参与评论</a>
+            </div>
+        </div>
+        <button style="width: 100px; height: 40px;background-color:#f04155;">发表</button>
     </div>
    </div>
-   
     
     <div class="footer">
 				<div class="footer_left">
