@@ -45,6 +45,7 @@
         .list img{
             width: 20px;
             height: 20px;
+            z-index:100;
         }
         nav a{
 	        text-align: right;
@@ -70,6 +71,9 @@
             width: 20px;
             height: 20px;
         }
+        .y img:hover{
+            opacity:0.7;
+        }
         .y a{
             display: inline-block;
         }
@@ -85,6 +89,7 @@
         }
         .carousel .item img{
             width: 100%;
+            z-index:0;
         }
         .carousel-caption{
             z-index: 10;
@@ -227,36 +232,36 @@
        </ol>
        <div class="carousel-inner">
            <div class="item active">
-               <img src="./image/lb1.jpg" alt="1 slide">
+               <a href=""><img src="./image/lb1.jpg" alt="1 slide"></a>
                <div class="carousel-caption">
                        <h1>一场“一边倒”的人机对抗：</h1>
                        <p>《星际争霸》到底比围棋难在哪儿？</p>
                    </div>
            </div>
            <div class="item">
-                <img src="./image/lb2.jpg" alt="2 slide">
+                <a href=""><img src="./image/lb2.jpg" alt="2 slide"></a>
                 <div class="carousel-caption">
                        <h1>人工智能威胁人类？</h1>
                        <p>刘慈欣：我对未来保持乐观</p>
                    </div>
            </div>
            <div class="item">
-                <img src="./image/lb3.jpg" alt="3 slide">
+               <a href=""><img src="./image/lb3.jpg" alt="3 slide"></a>
                 <div class="carousel-caption">
                        <h1>从珠三角到南亚次大陆：</h1>
                        <p>“僵尸粉”产业的迁徙与升级</p>
                    </div>
            </div>
            <div class="item">
-                <img src="./image/lb4.jpg" alt="4 slide">
+               <a href=""><img src="./image/lb4.jpg" alt="4 slide"></a>
                 <div class="carousel-caption">
                        <h1>iPhone上多了四个吃货Emoji</h1>
                        <p>最能代表“中华吃货”的Emoji上线了！</p>
                    </div>
            </div>
        </div>
-       <a href="#ad-carousel" data-slide="prev" class="left carousel-control"><span class="glyphicon glyphicon-chevron-left">   </span></a>
-         <a href="#ad-carousel" data-slide="next" class="right carousel-control"><span class="glyphicon glyphicon-chevron-right"></span></a>
+       <a href="#ad-carousel" data-slide="prev" class="left carousel-control"></a>
+         <a href="#ad-carousel" data-slide="next" class="right carousel-control"></a>
    </div>              
                   
     <div class="rd">
