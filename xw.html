@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>遇言|新闻    新闻列表</title>
+     <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="video-js/video-js.css" rel="stylesheet" type="text/css">
+    <script src="video-js/video.js"></script>
+    <script>
+        videojs.options.flash.swf = "video-js/video-js.swf";
+    </script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.js"></script>
+    <![ednif]-->
+    <style>
+        /*标题*/
+        .title{
+            height: 110px;
+        }
+        nav{
+	        position: fixed;
+            top: 0;
+	        z-index: 1000;
+	        height: 110px;
+	        width: 100%;
+	        background-color: black;
+	        box-shadow: 0 4px 4px 4px rgba(0,0,0,0.5) ;
+            opacity:0.8;
+        }
+        nav img{
+	        display: block;
+	        width: 170px;
+	        height: 54px;
+	        margin: 15px auto;
+            text-align: center;
+        }
+       .list{
+	        width: 70%;
+	        text-align: center;
+	        margin:0 auto;
+        }
+        .list img{
+            width: 20px;
+            height: 20px;
+        }
+        nav a{
+	        text-align: right;
+	        margin-right:10% ;
+            text-decoration: none;
+            color:white;
+            font-family:KaiTi;
+        }
+        nav a:hover{
+	        color:  #f04155;
+            text-decoration: none;
+        }
+        .y{
+            width: 12%;
+            height: 40px;
+            text-align: center;
+            float: right;
+            background-color:  #f04155;
+            margin-top: -70px;
+        }
+        .y img{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+        }
+        .y a{
+            display: inline-block;
+        }
+        
+        .footer{
+	background: #565555;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 1px white;
+    color: whitesmoke;
+    overflow: hidden;
+    }
+    .footer_left{
+	width: 45%;
+	height: 100%;
+	border-right: 1px solid darkgray;
+	position: relative;
+    }
+    .footer_right{
+	width: 45%;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 10px;
+    }
+    .footer_right p{
+	line-height: 10px;
+    }
+        .footer_right span{
+            color: red;
+        } 
+    .link{
+	position: absolute;
+	top: 10px;
+	right: 5px;
+    }
+    .link a{
+	width: 30px;
+	float: left;
+	margin-left: 6px;
+    }
+    .link a img{
+	width: 100%;
+    }
+        
+        #main{ 
+            width: 95%;
+            margin: 0px auto;
+            margin-top: 30px;
+            
+        }
+        #div2{
+            display: inline-block;
+            width: 35%;
+            height:400px;
+            vertical-align: top;
+        }
+        #div2 img{
+            height: 400px;
+        }
+        #div3{
+            display: inline-block;
+            height: 400px;
+            width: 15%;
+            vertical-align: top;
+            margin-left: 10%;
+        }
+        #div3 img{
+            height: 190px;
+            margin-bottom: 20px;
+        }
+        #div4{
+            display: inline-block;
+            height: 700px;
+            width: 30%;
+            margin-top: -400px;
+            margin-right: 1%;
+            background-color: gainsboro;
+            overflow: scroll;
+            float: right;
+        }
+        #div5{
+            display: inline-block;
+            height: 500px;
+            width: 30%;
+            margin-right: 1%;
+            background-color: gainsboro;
+            float: right;
+            overflow: scroll;
+            margin-top: 30px;
+        }
+        .g{
+            width: 95%;
+        }
+        .xx{
+            display: inline-block;
+            width: 5%;
+            height: 50px;
+            background-color: #f04155;
+            margin-top: 20px;
+        }
+        .jsx{
+            display: inline-block;
+            margin-left: 10%;
+            font-family: YouYuan;
+            width: 80%;
+            margin-top: -400px;
+        }
+        
+        .pl{
+            margin-left: 5%;
+            margin-right: 5%;
+            font-family: YouYuan;
+            margin-bottom:40px;
+        }
+        .tx{
+            display: inline-block;
+            width:50px;
+            height:50px;
+            border-radius:100px;
+        }
+        .tx img{
+            width: 60px;
+            height: 60px;
+            border-radius:100px;
+            margin-bottom: 30px;
+        }
+        .ncnr{
+            display: inline-block;
+            margin-left: 3%;
+        }
+        
+        
+        .wz{
+            width: 66%;
+            float: left;
+            margin-top: 0px;
+        }
+        .p1,.p2{
+            margin-top: 30px;
+        }
+        .wztp{
+            display: inline-block;
+            width: 40%;
+        }
+        .wzbt a{
+            font-size: 30px;
+            font-family: YouYuan;
+            color:  black;
+            text-decoration: none;
+        }
+        .wzbt a:hover{
+            color: #f04155;
+        }
+        .wzbt2 a{
+            font-size: 30px;
+            font-family: YouYuan;
+            color:  black;
+            text-decoration: none;
+        }
+        .wzbt2 a:hover{
+            color: #f04155;
+        }
+        .rw a{
+            font-size: 30px;
+            font-family: YouYuan;
+            color:  black;
+            text-decoration: none;
+        }
+        .rw a:hover{
+            color: #f04155;
+        }
+         .wztp2{
+            display: inline-block;
+            width: 50%;
+        }
+        .wztp img{
+            width: 270px;    
+        }
+        .wztp2 img{
+            width: 360px;    
+        }
+        .wzbt{
+             display: inline-block;
+             width: 50%;
+        }
+        .wzbt2{
+             display: inline-block;
+             width: 40%;
+        }
+        .wzbt h4{
+            font-size: 17px;
+            font-family: YouYuan;
+        }
+        .wzbt p{
+            color: gray;
+            font-size: 15px;
+            font-family: YouYuan;
+        }
+        .wzbt2 h4{
+            font-size: 17px;
+            font-family: YouYuan;
+        }
+        .wzbt2 p{
+            color: gray;
+            font-size: 15px;
+            font-family: YouYuan;
+        }
+        .dj{
+            border: 2px solid gainsboro;
+            width: 100%;
+            height: 50px;
+            margin-bottom: 40px;
+            text-align: center;
+            vertical-align: center;
+            background-color:gainsboro;
+        }
+        .dj a{
+            font-size: 30px;
+            font-family: YouYuan;
+            color:  #f04155;
+            text-decoration: none;
+        }
+        .dj a:hover{
+            color: white;
+        }
+        
+        .rw{
+            text-align: center;
+        }
+        .rw img{
+            width: 300px;
+        }
+        .rw p{
+            font-family: YouYuan;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+     <div>
+       <div class="title">
+       <nav>
+        <img src="./image/bt.png">
+        <div class="y">
+            <a href="set.html"><img src="./image/set.png" alt=""></a>
+            <a href="dl.html">登录/注册</a>
+        </div>
+         <div class="list">
+                    <a href="sy.html">首页</a>
+					<a href="xw.html" >新闻</a>
+					<a href="ss.html">搜索</a> 
+					<a href="gy.html">关于</a>            
+				</div>
+    </nav>
+   </div>
+   </div>
+
+    <div id="main">
+        <div id="div2">
+            <a href="#"><a href=""><img src="./image/xw1.jpg" alt=""></a></a>
+        </div>
+        <div id="div3">
+            <a href="#"><a href=""><img src="./image/xw2.jpg" alt=""></a></a>
+                <a href="#"><a href=""><img src="./image/xw3.jpg" alt=""></a></a>
+        </div>
+        <div class="wz">
+         <div class="p1">
+             <div class="wztp"><a href=""><img src="./image/wt1.jpg" alt=""></a></div>
+                     <div class="wzbt">
+                        <a href=""><h4><strong>《正义联盟》口碑扑街，DC依旧逃不出漫威的阴影</strong></h4></a> 
+                         <p>29分钟前</p>
+                         <p>总票房差距达到100亿美元，DC压力山大</p>
+         </div>
+            </div>
+            <hr>
+            <div class="p1">
+             <div class="wztp"><a href=""><img src="./image/wt2.jpg" alt=""></a></div>
+                     <div class="wzbt">
+                         <a href=""><h4><strong>互联网金融狂潮简史</strong></h4></a>
+                         <p>1小时前</p>
+                         <p>利用财务杠杆获得超额收益、超额增长的好日子，快走完了</p>
+         </div>
+            </div>
+            <hr>
+            <div class="p1">
+             <div class="wztp"><a href=""><img src="./image/wt3.jpg" alt=""></a></div>
+                     <div class="wzbt">
+                         <a href=""><h4><strong>据说音乐版权基金能避税，操作靠谱吗？</strong></h4></a>
+                         <p>2小时49分钟前</p>
+                         <p>还有这种操作？</p>
+         </div>
+            </div>
+            <hr>
+            <div class="p1">
+             <div class="wztp"><a href=""><img src="./image/wt4.jpg" alt=""></a></div>
+                     <div class="wzbt">
+                         <a href=""><h4><strong>百度发布了一款“积木”，售价1699元</strong></h4></a>
+                         <p>14小时前</p>
+                         <p>这款智能音箱和外边那些不一样</p>
+         </div>
+            </div>
+            <hr>
+            <div class="p1">
+             <div class="wztp"><a href=""><img src="./image/wt5.jpg" alt=""></a></div>
+                     <div class="wzbt">
+                         <a href=""><h4><strong>拿什么拯救你，我越来越不够用的游戏硬盘</strong></h4></a>
+                         <p>16小时前</p>
+                         <p>动辄几十个G，玩家再也不敢买电子版的游戏了</p>
+         </div>
+            </div>
+            <hr>
+            <div class="p2">
+             <div class="wztp2"><a href=""><img src="./image/wt6.jpg" alt=""></a></div>
+                     <div class="wzbt2">
+                         <a href=""><h4><strong>AR创业的困惑：我来早了，但快倒了</strong></h4></a>
+                         <p>27小时前</p>
+                         <p>创业的艺术在于：把握住每一个时间节点</p>
+         </div>
+            </div>
+            <hr>
+            <div class="dj">
+                <a href=""><strong>点击加载更多</strong></a>
+            </div>
+        </div>
+            
+        
+            </div>
+            
+        <div id="div4">
+         <div class="g">
+             <div class="xx"></div>
+             <div class="jsx">
+               <h2><strong>24小时</strong></h2>
+           </div>
+         </div>
+             <hr>
+             <div class="pl">
+                 <div class="nc">
+                     <div class="tx"><img src="./image/tx1.jpg" alt=""></div>
+                     <div class="ncnr">
+                         <strong>大魔王泽莫</strong>
+                         <p>19分钟前</p>
+                     </div>
+                 </div>
+                 <div class="plnr">
+                     <p>顺丰控股董事长王卫在接受央视采访时说：“我不认为顺丰送快递有多快。” </p>
+                     <p>  #全是同行衬托得好#</p>
+                    
+                 </div>
+             </div>
+             <hr>
+             <div class="pl">
+                 <div class="nc">
+                     <div class="tx"><img src="./image/tx2.jpg" alt=""></div>
+                     <div class="ncnr">
+                         <strong>共享经济体i</strong>
+                         <p>23分钟前</p>
+                     </div>
+                 </div>
+                 <div class="plnr">
+                     <p>拜客出行：想骑车，请找我，想要钱，找小蓝。</p>
+                     <p>在昨天的公开信里，小蓝单车创始人李刚声称“拜客出行将全权代理小蓝单车未来的运营”，而今早的最新消息则是拜客出行的回应：“公司暂未收到运营小蓝单车的信息，即便合作，也只负责线下车辆运营和维护，关于押金退款等其他费用类问题，需要联系原品牌公司。”</p>
+                     <p>#所以李刚同学还得接着去找钱啊~</p>
+                    
+                 </div>
+             </div>
+             <hr>
+             <div class="pl">
+                 <div class="nc">
+                     <div class="tx"><img src="./image/tx3.jpg" alt=""></div>
+                     <div class="ncnr">
+                         <strong>果粉er</strong>
+                         <p>28分钟前</p>
+                     </div>
+                 </div>
+                 <div class="plnr">
+                     <p>#北方的冬天已经来了，朋友们升级了吗 </p>
+                     <p>今天，苹果向iOS 11用户推送11.1.2小版本更新修复iPhone X低温屏幕无响应的问题。除此之外，还修复了拍摄Live Photos和视频时可能导致的失真问题。</p>
+                    
+                 </div>
+             </div>
+             <hr>
+             <div class="pl">
+                 <div class="nc">
+                     <div class="tx"><img src="./image/tx4.jpg" alt=""></div>
+                     <div class="ncnr">
+                         <strong>影君子</strong>
+                         <p>58分钟前</p>
+                     </div>
+                 </div>
+                 <div class="plnr">
+                     <p>据《好莱坞报道者》报道，本周末华纳兄弟高层将面临十分巨大的压力，因为《正义联盟》的票房不太乐观，目前预计在1.1亿美元左右，相比去年3月《蝙蝠侠大战超人》1.66亿美元开画成绩还差点，且内部对影片的预期根本无法提高。</p>
+                     <p>《正义联盟》的媒体口碑也是非常的两极化，同时影片复杂的拍摄和补拍过程也花了很多钱。而本月月初上映的《雷神3：诸神黄昏》则取得了1.227亿美元的开画成绩，如果漫威二线角色主导电影胜过了DC一线团队，那可真是尴尬啊。（via @TNABO北美票房吧）
+                     </p>
+                 </div>
+             </div>
+             
+             <div class="pl">
+                 <div class="nc">
+                     <div class="tx"><img src="./image/tx3.jpg" alt=""></div>
+                     <div class="ncnr">
+                         <strong>果粉er</strong>
+                         <p>28分钟前</p>
+                     </div>
+                 </div>
+                 <div class="plnr">
+                     <p>#北方的冬天已经来了，朋友们升级了吗 </p>
+                     <p>今天，苹果向iOS 11用户推送11.1.2小版本更新修复iPhone X低温屏幕无响应的问题。除此之外，还修复了拍摄Live Photos和视频时可能导致的失真问题。</p>
+                    
+                 </div>
+             </div>
+             <hr>
+             <div class="pl">
+                 <div class="nc">
+                     <div class="tx"><img src="./image/tx4.jpg" alt=""></div>
+                     <div class="ncnr">
+                         <strong>影君子</strong>
+                         <p>58分钟前</p>
+                     </div>
+                 </div>
+                 <div class="plnr">
+                     <p>据《好莱坞报道者》报道，本周末华纳兄弟高层将面临十分巨大的压力，因为《正义联盟》的票房不太乐观，目前预计在1.1亿美元左右，相比去年3月《蝙蝠侠大战超人》1.66亿美元开画成绩还差点，且内部对影片的预期根本无法提高。</p>
+                     <p>《正义联盟》的媒体口碑也是非常的两极化，同时影片复杂的拍摄和补拍过程也花了很多钱。而本月月初上映的《雷神3：诸神黄昏》则取得了1.227亿美元的开画成绩，如果漫威二线角色主导电影胜过了DC一线团队，那可真是尴尬啊。（via @TNABO北美票房吧）
+                     </p>
+                 </div>
+             </div>
+        </div>
+     
+     <div id="div5">
+         <div class="g">
+             <div class="xx"></div>
+             <div class="jsx">
+               <h2><strong>热文</strong></h2>
+           </div>
+         </div>
+             <hr>
+             <div class="rw">
+                 <a href=""><img src="./image/rw1.jpg" alt=""></a>
+                 <p></p>
+                 <p><a href="">俞敏洪谈中年油腻男人</a></p>
+             </div>
+             
+             <hr>
+             <div class="rw">
+                 <a href=""><img src="./image/rw2.jpg" alt=""></a>
+                 <p></p>
+                <p> <a href="">咱这智商，基本告别双十一了</a></p>
+             </div>
+             
+        </div>
+     
+    <div class="footer">
+				<div class="footer_left">
+					<div class="link">
+						<a href="#"><img src="./image/contact3.png"/></a>
+						<a href="#"><img src="./image/contact2.png"/></a>
+						<a href="#"><img src="./image/contact1.png"/></a>
+					</div>
+				</div>
+				<div class="footer_right">
+					<a href="#dh">返回顶部</a>
+					<p></p>
+					<p></p>
+					<p id="title">遇言<span>|新闻</span></p>
+					<p>版权所有 遇言新闻网</p>
+					<p>QQ : 765453430</p>
+					<p>Email : yuyan@163.com</p>
+					<p>weibo : @遇言|新闻</p>
+					<p>Copyright&copy; yujian.com All Rights Reserved</p>
+				</div>
+				</div>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+       $(function(){
+           $('#ad-carousel').carousel();
+           $('#menu-nav .navbar-collapse a').click(function(e){
+               var href = $(this).attr('href');
+               var tabId = $(this).attr('data-tab');
+               if('#'!==href){
+                   e.preventDefault();
+                   $(document).scrollTop($(href).offset().top - 70);
+                   if(tabId){
+                       $('#feature-tab a[href=#'+tabId +']').tab('show');
+                   }
+               }
+           })
+       })
+    </script>
+</body>
+</html>
